@@ -48,5 +48,5 @@ Yep, that's it!
 
 ### 6. Update plugin list
 
-Just alter plugin list in [install script](https://github.com/ngalayko/vim-go-ide/blob/master/bin/install)
+Just alter plugin list in [install script](https://github.com/ngalayko/vim-go-ide/blob/master/bin/install) and run `./bin/install`
 
