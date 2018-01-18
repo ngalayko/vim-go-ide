@@ -5,8 +5,6 @@ set nocompatible
 
 command! MakeTags !ctags -R .
 
-colorscheme gruvbox
-
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
 
