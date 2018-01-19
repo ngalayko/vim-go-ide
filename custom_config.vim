@@ -44,3 +44,5 @@ let g:go_highlight_extra_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_build_constraints = 1
 
+" status bar with file location
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w
