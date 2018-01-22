@@ -1,10 +1,7 @@
+call g:deoplete#custom#set('_', 'converters', ['converter_remove_overlap', 'converter_truncate_abbr', 'converter_truncate_menu', 'converter_auto_paren'])
 
-" Enter dot after package name
-let g:deoplete#sources#go#package_dot = 1
-
-" Sort hints by type
-let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
-
-" Support pointer
+let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+let g:deoplete#sources#go#use_cache = 1
 let g:deoplete#sources#go#pointer = 1
+let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 
