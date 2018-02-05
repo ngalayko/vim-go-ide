@@ -1,8 +1,8 @@
-set runtimepath^="/Users/nikita.galayko/.vim.go"
+set runtimepath^="$HOME/.vim.go"
 
-source /Users/nikita.galayko/.vim.go/vimrc/main.vim
+source $HOME/.vim.go/vimrc/main.vim
 
 try
-  source /Users/nikita.galayko/.vim.go/custom_config.vim
+  source $HOME/.vim.go/custom_config.vim
 catch
 endtry
