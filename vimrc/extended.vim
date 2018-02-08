@@ -1,6 +1,3 @@
-" use golint onsave
-set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
-autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
 
 " Don't request terminal version string (for xterm)
 set t_RV=
