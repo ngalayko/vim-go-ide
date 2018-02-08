@@ -89,6 +89,10 @@ clone_from_git () {
     create_options_for ${plugin}
 }
 
+if [ ! -d ${BUNDLE_PATH} ]; then
+    mkdir ${BUNDLE_PATH}
+fi
+
 reset_plugins
 reset_options
 for plugin in ${plugins[@]}; do
