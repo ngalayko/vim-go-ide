@@ -21,6 +21,7 @@ plugins=(
     https://github.com/jiangmiao/auto-pairs
     https://github.com/majutsushi/tagbar
     https://github.com/junegunn/fzf.vim
+    https://github.com/ekalinin/Dockerfile.vim
         )
 
 reset_plugins () {

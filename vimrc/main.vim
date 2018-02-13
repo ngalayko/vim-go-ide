@@ -21,3 +21,4 @@ source /Users/Nikita/.vim/bin/../vimrc/plugins/vim-go.vim
 source /Users/Nikita/.vim/bin/../vimrc/plugins/auto-pairs.vim
 source /Users/Nikita/.vim/bin/../vimrc/plugins/tagbar.vim
 source /Users/Nikita/.vim/bin/../vimrc/plugins/fzf.vim
+source /Users/Nikita/.vim/bin/../vimrc/plugins/Dockerfile.vim
