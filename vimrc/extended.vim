@@ -27,3 +27,10 @@ nmap <silent> <leader>n :silent :nohlsearch<cr>
 " Make sure that CTRL-A (used by gnu screen) is redefined
 noremap <leader>inc <C-A>
 
+" Move lines around (macOS <A-j> = ˚ <A-k> = ∆)
+nnoremap ∆ :m+<CR>==
+nnoremap ˚ :m-2<CR>==
+inoremap ∆ <Esc>:m .+1<CR>==gi
+inoremap ˚ <Esc>:m .-2<CR>==gi
+vnoremap ∆ :m'>+<CR>gv=gv
+vnoremap ˚ :m'<-2<CR>gv=gv
