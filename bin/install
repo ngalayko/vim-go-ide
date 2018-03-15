@@ -22,6 +22,7 @@ plugins=(
     https://github.com/majutsushi/tagbar
     https://github.com/junegunn/fzf.vim
     https://github.com/ekalinin/Dockerfile.vim
+    https://github.com/907th/vim-auto-save
         )
 
 reset_plugins () {

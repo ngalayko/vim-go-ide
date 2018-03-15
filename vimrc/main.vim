@@ -22,3 +22,4 @@ source /Users/ngalayko/.vim/bin/../vimrc/plugins/auto-pairs.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/tagbar.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/fzf.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/Dockerfile.vim
+source /Users/ngalayko/.vim/bin/../vimrc/plugins/vim-auto-save.vim
