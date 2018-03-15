@@ -1,6 +1,8 @@
 map ]] ]c
 map [[ [c
-map <leader>gdi :Gdiff<cr>
-map <leader>gst :Gstatus<cr>
-map <leader>dup :diffupdate<cr>
 
+map <leader>gd :Gdiff<cr>
+map <leader>gs :Gstatus<cr>
+map <leader>gp :Gdiff<cr>
+
+map <leader>g :Git 
