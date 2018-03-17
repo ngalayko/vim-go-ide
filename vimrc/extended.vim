@@ -1,4 +1,3 @@
-
 " Don't request terminal version string (for xterm)
 set t_RV=
 

@@ -1,6 +1,8 @@
 "------------------------------------------------------------------------------
 " General
-"------------------------------------------------------------------------------
+"------------------------------------------------------------------------------"
+" enter the current millenium
+set nocompatible
 
 " let's make sure we are in noncompatble mode
 set nocp
@@ -17,18 +19,9 @@ filetype indent on
 let mapleader = ","
 let g:mapleader = ","
 
-" Fast saving
-map <Leader>w :w<CR>
-imap <Leader>w <ESC>:w<CR>
-vmap <Leader>w <ESC><ESC>:w<CR>
-
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
-
-" This is totally awesome - remap jj to escape in insert mode.  You'll never type jj anyway, so it's great!
-inoremap jj <esc>
-nnoremap JJJJ <nop>
 
 "------------------------------------------------------------------------------
 " VIM user interface
@@ -58,6 +51,7 @@ set cursorline
 " Completion options (select longest + show menu even if a single match is found)
 set completeopt=longest,menuone
 
+set path+=**
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
 if has("win16") || has("win32")
@@ -66,26 +60,18 @@ else
     set wildignore+=.git\*,.hg\*,.svn\*
 endif
 
-" Show line, column number, and relative position within a file in the status line
-set ruler
-
-" Show line numbers - could be toggled on/off on-fly by pressing F6
-set number
+set wildignore+=**/node_modules/**
+set wildignore+=**/vendor/**
 
 " Show (partial) commands (or size of selection in Visual mode) in the status line
 set showcmd
 
-" A buffer becomes hidden when it is abandoned
-set hid
+" line number + relative numbers
+set relativenumber number
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
-
-" In many terminal emulators the mouse works just fine, thus enable it.
-if has('mouse')
-  set mouse="a"
-endif
 
 " Allow smarter completion by infering the case
 set infercase
@@ -180,7 +166,7 @@ set noswapfile
 " /20  - remember 20 items in search history
 " %    - remember the buffer list (if vim started without a file arg)
 " n    - set name of viminfo file
-set viminfo='20,\"50,:20,/20,%,n~/.viminfo.go
+set viminfo='20,\"50,:20,/20,%,n~/.viminfo
 
 " Define what to save with :mksession
 " blank - empty windows
@@ -229,7 +215,6 @@ set nowrap "Don't Wrap lines (it is stupid)
 vnoremap <silent> * :call VisualSelection('f', '')<CR>
 vnoremap <silent> # :call VisualSelection('b', '')<CR>
 
-
 "------------------------------------------------------------------------------
 " Moving around, tabs, windows and buffers
 "------------------------------------------------------------------------------
@@ -238,21 +223,11 @@ vnoremap <silent> # :call VisualSelection('b', '')<CR>
 map j gj
 map k gk
 
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-map <c-space> ?
-
-" Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
-
 " Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-
-" Close the current buffer (w/o closing the current window)
-" map <leader>bd :Bclose<cr>
 
 " Close all the buffers
 map <leader>bda :1,1000 bd!<cr>
@@ -285,7 +260,7 @@ try
 catch
 endtry
 
-" Return to last edit position when opening files (You want this!)
+" Return to last edit position when opening files 
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
@@ -323,19 +298,6 @@ set statusline +=%=%-14.(%l,%c%V%)\ %P
 " Remap VIM 0 to first non-blank character
 map 0 ^
 
-" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
-nmap <M-j> mz:m+<cr>`z
-nmap <M-k> mz:m-2<cr>`z
-vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
-
-if has("mac") || has("macunix")
-  nmap <D-j> <M-j>
-  nmap <D-k> <M-k>
-  vmap <D-j> <M-j>
-  vmap <D-k> <M-k>
-endif
-
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
   exe "normal mz"
@@ -349,41 +311,6 @@ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 " visual shifting (does not exit Visual mode)
 vnoremap < <gv
 vnoremap > >gv
-
-
-"------------------------------------------------------------------------------
-" Spell checking
-"------------------------------------------------------------------------------
-
-" Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
-
-" Shortcuts using <leader>
-map <leader>sn ]s
-map <leader>sp [s
-map <leader>sa zg
-map <leader>s? z=
-
-
-"------------------------------------------------------------------------------
-" Misc
-"------------------------------------------------------------------------------
-
-" Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
-
-" Quickly open a buffer for scribble
-map <leader>q :e ~/buffer<cr>
-
-" Quickly open a markdown buffer for scribble
-map <leader>x :e ~/buffer.md<cr>
-
-" Toggle paste mode on and off
-map <leader>pp :setlocal paste!<cr>
-
-" easy way to edit reload .vimrc
-nmap <leader>V :source $MYVIMRC<cr>
-nmap <leader>v :vsp $MYVIMRC<cr>
 
 "------------------------------------------------------------------------------
 " Helper functions

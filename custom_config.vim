@@ -1,25 +1,4 @@
-let mapleader = ","
-
-" enter the current millenium 
-set nocompatible
-
 command! MakeTags !ctags -R .
-
-cnoreabbrev Ack Ack!
-nnoremap <Leader>a :Ack!<Space>
-
-" enable syntax and plugins (for netrw)
-syntax enable 
-filetype plugin on 
-
-" FINDING FILES:
-
-command find find "./"
-
-set path+=**
-set wildignore+=**/node_modules/**
-set wildignore+=**/vendor/**
-set wildmenu
 
 " disable mouse
 set mouse=
@@ -36,13 +15,10 @@ au FileType go map <F6> :GoRename<CR>
 let g:go_fmt_command = "goimports"
 let g:go_fmt_autosave = 1
 
-set autowrite
-
 let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_build_constraints = 1
-
 
 let g:go_guru_scope = ['gitlab.services.ams.osa/opera-mobile/opera-pay']
 let g:go_build_tags = 'functests unittests comptests'
