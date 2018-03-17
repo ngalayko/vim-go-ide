@@ -8,7 +8,6 @@ call pathogen#helptags()
 " Load plugins settings
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/vim-hardtime.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/gruvbox.vim
-source /Users/ngalayko/.vim/bin/../vimrc/plugins/ack.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/deoplete.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/deoplete-go.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/nvim-yarp.vim
@@ -21,6 +20,7 @@ source /Users/ngalayko/.vim/bin/../vimrc/plugins/syntastic.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/vim-go.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/auto-pairs.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/tagbar.vim
+source /Users/ngalayko/.vim/bin/../vimrc/plugins/fzf.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/fzf.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/Dockerfile.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/vim-auto-save.vim
