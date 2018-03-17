@@ -13,14 +13,13 @@ syntax enable
 filetype plugin on 
 
 " FINDING FILES:
-set path+=**
-set wildmenu
 
-" disable arrows
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+command find find "./"
+
+set path+=**
+set wildignore+=**/node_modules/**
+set wildignore+=**/vendor/**
+set wildmenu
 
 " disable mouse
 set mouse=
@@ -47,4 +46,4 @@ let g:go_highlight_build_constraints = 1
 
 let g:go_guru_scope = ['gitlab.services.ams.osa/opera-mobile/opera-pay']
 let g:go_build_tags = 'functests unittests comptests'
- 
+
