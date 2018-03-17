@@ -6,7 +6,6 @@ MAIN_OPTIONS_PATH=${CURRENT_DIR}'/../vimrc/main.vim'
 OPTIONS_PATH=${CURRENT_DIR}'/../vimrc/plugins/'
 
 plugins=(
-    https://github.com/takac/vim-hardtime
     https://github.com/morhetz/gruvbox
     https://github.com/Shougo/deoplete.nvim
     https://github.com/zchee/deoplete-go

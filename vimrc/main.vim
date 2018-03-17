@@ -6,7 +6,6 @@ call pathogen#infect('~/.vim/bundle/{}')
 call pathogen#helptags()
 
 " Load plugins settings
-source /Users/ngalayko/.vim/bin/../vimrc/plugins/vim-hardtime.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/gruvbox.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/deoplete.vim
 source /Users/ngalayko/.vim/bin/../vimrc/plugins/deoplete-go.vim
