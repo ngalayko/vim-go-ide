@@ -14,7 +14,6 @@ plugins=(
     https://github.com/scrooloose/nerdtree
     https://github.com/tpope/vim-fugitive
     https://github.com/scrooloose/nerdcommenter
-    https://github.com/airblade/vim-gitgutter
     https://github.com/scrooloose/syntastic
     https://github.com/fatih/vim-go
     https://github.com/jiangmiao/auto-pairs
@@ -22,7 +21,7 @@ plugins=(
     https://github.com/junegunn/fzf
     https://github.com/junegunn/fzf.vim
     https://github.com/ekalinin/Dockerfile.vim
-    https://github.com/907th/vim-auto-save
+    https://github.com/mhinz/vim-signify
         )
 
 reset_plugins () {

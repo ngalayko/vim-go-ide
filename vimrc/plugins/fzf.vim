@@ -74,3 +74,9 @@ command! -bang -nargs=? -complete=dir Files
 " Likewise, GFiles command with preview window
 command! -bang -nargs=? -complete=dir GFiles
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+
+" This is the default extra key bindings
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }

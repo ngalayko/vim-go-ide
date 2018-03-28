@@ -13,7 +13,7 @@ let NERDTreeAutoCenter = 1
 autocmd VimEnter * if !argc() | NERDTree | endif
 
 " Locate file in hierarchy quickly
-map <leader>T :NERDTreeFind<cr>
+map <leader>O :NERDTreeFind<cr>
 
 " Toogle on/off
 nmap <leader>o :NERDTreeToggle<cr>

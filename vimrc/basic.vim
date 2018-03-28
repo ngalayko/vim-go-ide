@@ -19,10 +19,6 @@ filetype indent on
 let mapleader = ","
 let g:mapleader = ","
 
-" :W sudo saves the file
-" (useful for handling the permission-denied error)
-command W w !sudo tee % > /dev/null
-
 "------------------------------------------------------------------------------
 " VIM user interface
 "------------------------------------------------------------------------------
@@ -194,6 +190,9 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
+map <leader>v :vsp<cr>
+map <leader>s :sp<cr>
+
 " Round indent to multiple of 'shiftwidth' for > and < commands
 set shiftround
 
@@ -280,9 +279,7 @@ set statusline =
 " Buffer number
 set statusline +=[%n]
 " File description
-set statusline +=%f\ %h%m%r%w
-" Filetype
-set statusline +=%y
+set statusline +=\ %f\ %h%m%r%w
 " Name of the current branch (needs fugitive.vim)
 set statusline +=\ %{fugitive#statusline()}
 " Date of the last time the file was saved
@@ -295,8 +292,6 @@ set statusline +=%=%-14.(%l,%c%V%)\ %P
 "------------------------------------------------------------------------------
 " Editing mappings
 "------------------------------------------------------------------------------
-" Remap VIM 0 to first non-blank character
-map 0 ^
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
