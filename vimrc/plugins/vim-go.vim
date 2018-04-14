@@ -6,10 +6,6 @@ let g:go_fmt_fail_silently = 1
 let g:go_fmt_command = "gofmt" "Explicited the formater plugin (gofmt, goimports, goreturn...)
 let g:go_fmt_autosave = 0
 
-
-" Show a list of interfaces which is implemented by the type under your cursor
-au FileType go nmap <Leader>s <Plug>(go-implements)
-
 " Show type info for the word under your cursor
 au FileType go nmap <Leader>i <Plug>(go-info)
 
