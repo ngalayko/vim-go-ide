@@ -23,3 +23,4 @@ source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/fzf.vim
 source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/fzf.vim
 source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/Dockerfile.vim
 source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/vim-signify.vim
+source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/nginx.vim

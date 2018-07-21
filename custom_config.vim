@@ -32,3 +32,7 @@ let g:go_build_tags = 'unittests comptests functional'
 
 let $GINKGO_EDITOR_INTEGRATION = "true"
 let g:go_snippet_engine = "neosnippet"
+
+let g:go_metalinter_command= "gometalinter --config=/Users/nikitagalaiko/golang/src/gitlab.services.ams.osa/opera-mobile/opera-pay/.gometalinter.json expand('%:p')"
+
+nmap <Leader>e :GoIfErr<CR>

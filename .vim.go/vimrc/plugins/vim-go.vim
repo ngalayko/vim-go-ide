@@ -6,6 +6,10 @@ let g:go_fmt_fail_silently = 1
 let g:go_fmt_command = "gofmt" "Explicited the formater plugin (gofmt, goimports, goreturn...)
 let g:go_fmt_autosave = 0
 
+
+" Show a list of interfaces which is implemented by the type under your cursor
+au FileType go nmap <Leader>s <Plug>(go-implements)
+
 " Show type info for the word under your cursor
 au FileType go nmap <Leader>i <Plug>(go-info)
 
@@ -27,24 +31,8 @@ au FileType go nmap <leader>c <Plug>(go-coverage)
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_chan_whitespace_error = 1
-let g:go_highlight_array_whitespace_error = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_space_tab_error = 1
-let g:go_highlight_trailing_whitespace_error = 1
-let g:go_highlight_function_arguments = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_generate_tags = 1
-let g:go_highlight_string_spellcheck = 1
-let g:go_highlight_format_strings = 1
 
-
-let g:tagbar_type_go = {
+let g:tagbar_type_go = {  
     \ 'ctagstype' : 'go',
     \ 'kinds'     : [
         \ 'p:package',
