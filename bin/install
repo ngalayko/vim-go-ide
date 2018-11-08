@@ -23,6 +23,11 @@ plugins=(
     https://github.com/ekalinin/Dockerfile.vim
     https://github.com/mhinz/vim-signify
     https://github.com/chr4/nginx.vim
+    https://github.com/hexdigest/gounit-vim
+    https://github.com/w0rp/ale
+    https://github.com/vim-airline/vim-airline
+    https://github.com/tpope/vim-surround
+    https://github.com/tpope/vim-repeat
         )
 
 reset_plugins () {

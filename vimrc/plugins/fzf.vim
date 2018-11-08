@@ -3,6 +3,8 @@ set rtp+=/usr/local/bin/fzf
 
 map <leader>f :Files<cr>
 map <leader>a :Ag<cr>
+map <leader><leader>a :History/<cr>
+map <leader><leader>f :History<cr>
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =

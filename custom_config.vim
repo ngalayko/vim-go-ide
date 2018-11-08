@@ -36,3 +36,6 @@ let g:go_snippet_engine = "neosnippet"
 let g:go_metalinter_command= "gometalinter --config=/Users/nikitagalaiko/golang/src/gitlab.services.ams.osa/opera-mobile/opera-pay/.gometalinter.json expand('%:p')"
 
 nmap <Leader>e :GoIfErr<CR>
+nmap <Leader>p O<ESC>o<ESC>Ofmt.Printf("\nnikitag: %+v\n\n", )<ESC>i
+
+set spell spelllang=en

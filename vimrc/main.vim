@@ -24,3 +24,8 @@ source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/fzf.vim
 source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/Dockerfile.vim
 source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/vim-signify.vim
 source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/nginx.vim
+source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/gounit-vim.vim
+source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/ale.vim
+source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/vim-airline.vim
+source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/vim-surround.vim
+source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/vim-repeat.vim
