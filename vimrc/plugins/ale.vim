@@ -6,6 +6,7 @@ let b:ale_fixers = {
 \   'dockerfile': ['hadolint'],
 \   'bash': ['shfmt'],
 \   'make': ['checkmake'],
+\   'javascript': ['prettier'],
 \}
 
 let g:airline#extensions#ale#enabled = 1

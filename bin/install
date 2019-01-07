@@ -9,6 +9,8 @@ plugins=(
     https://github.com/morhetz/gruvbox
     https://github.com/Shougo/deoplete.nvim
     https://github.com/zchee/deoplete-go
+    https://github.com/carlitux/deoplete-ternjs
+    https://github.com/ternjs/tern_for_vim
     https://github.com/roxma/nvim-yarp
     https://github.com/roxma/vim-hug-neovim-rpc
     https://github.com/scrooloose/nerdtree
@@ -28,6 +30,9 @@ plugins=(
     https://github.com/vim-airline/vim-airline
     https://github.com/tpope/vim-surround
     https://github.com/tpope/vim-repeat
+    https://github.com/pangloss/vim-javascript
+    https://github.com/mxw/vim-jsx
+    https://github.com/robertmeta/nofrils
         )
 
 reset_plugins () {

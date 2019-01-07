@@ -1,3 +1,8 @@
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
+
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set list
+
 command! MakeTags !ctags -R .
 
 " disable mouse
