@@ -1,10 +1,20 @@
+nmap <Leader>p O<ESC>o<ESC>Ofmt.Printf("\nnikitag: %+v\n\n", )<ESC>i
+nmap <Leader>e :GoIfErr<CR>
 
 let g:go_guru_scope = ['gitlab.services.ams.osa/opera-mobile/opera-pay']
 let g:go_build_tags = 'functests unittests comptests'
 
 let g:go_fmt_fail_silently = 1
-let g:go_fmt_command = "gofmt" "Explicited the formater plugin (gofmt, goimports, goreturn...)
-let g:go_fmt_autosave = 0
+let g:go_fmt_command = "goimports"
+let g:go_fmt_autosave = 1
+
+au FileType go map <F6> :GoRename<CR>
+
+let g:go_template_use_pkg = 1
+
+let $GINKGO_EDITOR_INTEGRATION = "true"
+let g:go_snippet_engine = "neosnippet"
+
 
 " Show type info for the word under your cursor
 au FileType go nmap <Leader>i <Plug>(go-info)

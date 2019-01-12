@@ -19,9 +19,16 @@ filetype indent on
 let mapleader = ","
 let g:mapleader = ","
 
+" Reload config.
+nnoremap <leader>sv :source $MYVIMRC<CR>     
+
 "------------------------------------------------------------------------------
 " VIM user interface
 "------------------------------------------------------------------------------
+
+" Show tabs and spaces.
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set list
 
 " Make sure that coursor is always vertically centered on j/k moves
 set so=999
@@ -116,11 +123,6 @@ set nrformats=octal,hex,alpha
 " Enable syntax highlighting
 syntax enable
 
-try
-    colorscheme molokai
-catch
-endtry
-
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
@@ -180,6 +182,9 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
+" javascript: 1 tab == 2 spaces
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
+
 map <leader>v :vsp<cr>
 map <leader>s :sp<cr>
 
@@ -193,7 +198,6 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set nowrap "Don't Wrap lines (it is stupid)
-
 
 "------------------------------------------------------------------------------
 " Visual mode related
