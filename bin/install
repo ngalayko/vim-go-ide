@@ -6,33 +6,27 @@ MAIN_OPTIONS_PATH=${CURRENT_DIR}'/../vimrc/main.vim'
 OPTIONS_PATH=${CURRENT_DIR}'/../vimrc/plugins/'
 
 plugins=(
-    https://github.com/morhetz/gruvbox
     https://github.com/Shougo/deoplete.nvim
     https://github.com/zchee/deoplete-go
     https://github.com/carlitux/deoplete-ternjs
     https://github.com/ternjs/tern_for_vim
     https://github.com/roxma/nvim-yarp
-    https://github.com/roxma/vim-hug-neovim-rpc
     https://github.com/scrooloose/nerdtree
     https://github.com/tpope/vim-fugitive
     https://github.com/scrooloose/nerdcommenter
-    https://github.com/scrooloose/syntastic
     https://github.com/fatih/vim-go
     https://github.com/jiangmiao/auto-pairs
     https://github.com/majutsushi/tagbar
     https://github.com/junegunn/fzf
     https://github.com/junegunn/fzf.vim
-    https://github.com/ekalinin/Dockerfile.vim
     https://github.com/mhinz/vim-signify
-    https://github.com/chr4/nginx.vim
     https://github.com/hexdigest/gounit-vim
     https://github.com/w0rp/ale
     https://github.com/vim-airline/vim-airline
     https://github.com/tpope/vim-surround
-    https://github.com/tpope/vim-repeat
     https://github.com/pangloss/vim-javascript
     https://github.com/mxw/vim-jsx
-    https://github.com/robertmeta/nofrils
+    https://github.com/morhetz/gruvbox
         )
 
 reset_plugins () {

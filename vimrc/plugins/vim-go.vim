@@ -32,8 +32,10 @@ au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 
-" By default syntax-highlighting for Functions, Methods and Structs is disabled.
-" Let's enable them!
+let g:go_auto_type_info = 1
+
+let g:go_addtags_transform = "snakecase"
+
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1

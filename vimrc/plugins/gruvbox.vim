@@ -1,5 +1,4 @@
+set background=dark
+let g:gruvbox_contrast_dark = "medium"
 
 colorscheme gruvbox
-
-set background=dark
-let g:gruvbox_contrast_dark = "soft"

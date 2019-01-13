@@ -1,7 +1,12 @@
 let g:ale_completion_enabled = 1
 let g:ale_sign_column_always = 1
 
+" Error and warning signs.
+let g:ale_sign_error = '⤫'
+let g:ale_sign_warning = '⚠'
+
 let b:ale_fixers = {
+\   '*': ['remove_trailing_lines','trim_whitespace'],
 \   'go': ['gometalinter'],
 \   'dockerfile': ['hadolint'],
 \   'bash': ['shfmt'],

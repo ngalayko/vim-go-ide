@@ -26,10 +26,6 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 " VIM user interface
 "------------------------------------------------------------------------------
 
-" Show tabs and spaces.
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-set list
-
 " Make sure that coursor is always vertically centered on j/k moves
 set so=999
 
@@ -120,22 +116,18 @@ set nrformats=octal,hex,alpha
 " Colors and Fonts
 "------------------------------------------------------------------------------
 
+" Show tabs and spaces.
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set list
+
 " Enable syntax highlighting
-syntax enable
+syntax on
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
-
-" highlight trailing space
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
 
 "------------------------------------------------------------------------------
 " Files, backups and undo
