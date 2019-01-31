@@ -117,8 +117,8 @@ set nrformats=octal,hex,alpha
 "------------------------------------------------------------------------------
 
 " Show tabs and spaces.
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-set list
+" set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+" set list
 
 " Enable syntax highlighting
 syntax on

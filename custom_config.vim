@@ -7,4 +7,8 @@ map <S-ScrollWhellUp> <Nop>
 map <ScrollWheelDown> <Nop>
 map <S-ScrollWheelDown> <Nop>
 
-set spell spelllang=en
+" set spell spelllang=en
+
+let g:go_build_tags = 'unittests comptests functional'
+
+syntax off

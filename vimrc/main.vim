@@ -28,3 +28,4 @@ source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/vim-surround.vim
 source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/vim-javascript.vim
 source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/vim-jsx.vim
 source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/gruvbox.vim
+source /Users/nikitagalaiko/.vim/bin/../vimrc/plugins/vim-colors-paramount.vim

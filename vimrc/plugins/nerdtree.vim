@@ -18,3 +18,5 @@ map <leader>O :NERDTreeFind<cr>
 " Toogle on/off
 nmap <leader>o :NERDTreeToggle<cr>
 
+let g:NERDTreeNodeDelimiter = "\u00a0"
+
