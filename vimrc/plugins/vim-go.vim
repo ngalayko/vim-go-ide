@@ -10,6 +10,8 @@ let g:go_fmt_autosave = 1
 
 au FileType go map <F6> :GoRename<CR>
 
+let g:go_def_mapping_enabled = 0
+
 let g:go_template_use_pkg = 1
 
 let $GINKGO_EDITOR_INTEGRATION = "true"
