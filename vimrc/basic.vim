@@ -30,7 +30,7 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 set so=999
 
 " add vertical lines on columns
-set colorcolumn=80,120
+set colorcolumn=114
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en'
