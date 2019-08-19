@@ -12,6 +12,7 @@ let b:ale_fixers = {
 \   'bash': ['shfmt'],
 \   'make': ['checkmake'],
 \   'javascript': ['prettier'],
+\   'haskell': ['cabal_ghc', 'ghc', 'ghc_mod', 'hdevtools', 'hie', 'hlint', 'stack_build', 'stack_ghc', 'stylish-haskell'],
 \}
 
 let g:airline#extensions#ale#enabled = 1

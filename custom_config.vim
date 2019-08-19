@@ -12,3 +12,6 @@ map <S-ScrollWheelDown> <Nop>
 let g:go_build_tags = 'unittests comptests functional'
 
 syntax off
+
+" tink packages.
+let g:go_guru_scope = ['github.com/tink-ab']

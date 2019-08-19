@@ -22,7 +22,9 @@ plugins=(
     https://github.com/w0rp/ale
     https://github.com/vim-airline/vim-airline
     https://github.com/tpope/vim-surround
-    https://github.com/morhetz/gruvbox
+    https://github.com/lifepillar/vim-gruvbox8
+    https://github.com/neovimhaskell/haskell-vim
+    https://github.com/eagletmt/neco-ghc
         )
 
 reset_plugins () {

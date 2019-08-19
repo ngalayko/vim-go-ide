@@ -1,8 +1,6 @@
 nmap <Leader>p O<ESC>o<ESC>Ofmt.Printf("\nnikitag: %+v\n\n", )<ESC>i
 nmap <Leader>e :GoIfErr<CR>
 
-let g:go_guru_scope = ['gitlab.services.ams.osa/opera-mobile/opera-pay']
-let g:go_build_tags = 'functests unittests comptests'
 
 let g:go_fmt_fail_silently = 1
 let g:go_fmt_command = "goimports"

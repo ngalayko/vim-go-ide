@@ -23,4 +23,6 @@ source /Users/nikita.galaiko/.vim/bin/../vimrc/plugins/gounit-vim.vim
 source /Users/nikita.galaiko/.vim/bin/../vimrc/plugins/ale.vim
 source /Users/nikita.galaiko/.vim/bin/../vimrc/plugins/vim-airline.vim
 source /Users/nikita.galaiko/.vim/bin/../vimrc/plugins/vim-surround.vim
-source /Users/nikita.galaiko/.vim/bin/../vimrc/plugins/gruvbox.vim
+source /Users/nikita.galaiko/.vim/bin/../vimrc/plugins/vim-gruvbox8.vim
+source /Users/nikita.galaiko/.vim/bin/../vimrc/plugins/haskell-vim.vim
+source /Users/nikita.galaiko/.vim/bin/../vimrc/plugins/neco-ghc.vim
