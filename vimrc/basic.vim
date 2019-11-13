@@ -174,8 +174,8 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
-" javascript: 1 tab == 2 spaces
-autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
+" javascript: 1 tab == 4 spaces
+autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 expandtab
 
 map <leader>v :vsp<cr>
 map <leader>s :sp<cr>
